@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #3f41ad;
+  padding: 60px;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.7); /* Fundo com transparência */
+  padding: 30px 30px 30px 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 400px;
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.btn-cadastrar {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #4b24b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cadastrar:hover {
+  background-color: #0056b3;
+}
+
+@keyframes btn-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-cadastrar.animate {
+  animation: btn-animation 1s infinite;
+}
+
+/* Estilo para os usuários da lista */
+.user-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #30318b;
+  border-radius: 5px;
+}
+.user-item p {
+  margin: 4px;
+}
+.user-item .name {
+  font-weight: bold;
+  color: #ffffff;
+}
+.user-item .username {
+  color: #888888;
+}
+.user-item .email {
+  color: #888888;
+}
+.user-item .cpf {
+  color: #888888;
+}
+.user-item .birthdate {
+  color: #888888;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
